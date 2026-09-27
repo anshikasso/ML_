@@ -1,0 +1,8 @@
+Model,Optimal Thresh,Precision,Recall,F_0.5 Score,Fit Time,Inference Time
+1. Logistic Regression (Baseline),0.75,100.00%,95.76%,0.9912,0.05s,3.4ms
+2. Random Forest,0.60,99.82%,98.10%,0.9947,0.30s,41.0ms
+3. XGBoost,0.85,99.91%,97.29%,0.9937,0.21s,0.0ms
+4. CatBoost,0.65,99.45%,98.29%,0.9922,0.87s,8.4ms
+5. LightGBM,0.80,99.91%,97.56%,0.9943,3.17s,11.1ms
+⭐ 6. Ensemble (LightGBM + CatBoost),0.70,99.54%,98.29%,0.9929,Combined,Fast (~2x)
+⭐ 7. Ensemble (LightGBM + CatBoost + XGBoost),0.55,99.45%,98.65%,0.9929,Combined,Moderate (~3x)
